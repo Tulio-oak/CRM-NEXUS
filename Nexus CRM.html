@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html><head><script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"assets/dba56bdc-fefe-4d4a-95a9-486f74338558.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"assets/1202a2ec-6323-4153-a5ba-2cfb52f81367.js"};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/1e3da35e-c50e-42b6-9bd8-e5eb645e8ef7.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/97a293d8-d977-4fb2-8070-5fc760ca5a2f.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/597cbd0e-46de-48f0-8801-ce270fdec533.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/7b8b0261-8bcb-45cc-8515-ef363f27f127.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/efa1ef3a-ad8a-48c8-995f-d60e51d173d4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/dde709d4-7e6b-475f-a3c3-bd977e9078f6.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/7869e51d-ef1f-46e8-8a8d-3d0f848de8ee.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/99bf088b-e77e-48ad-8323-caaf1fa83473.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/a7b4a408-35ae-4e95-bda8-390fdd52640b.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/272b14a2-8902-4a27-bc54-f5807aaa384c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/aad29bde-0260-402e-a05f-6ee46f876535.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/0bda0ee3-11d6-4762-8c2f-c93ad9e295dc.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/2134fd16-801e-452e-ba77-68ec48dee81d.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/c2ebe0a6-7986-4826-9d4e-5da986ac8ee2.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/dcc8c725-59d7-49a2-ad13-5125a62c6058.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/8768c325-6792-42e0-995f-c5ce68fd8891.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/532fd43e-93f5-49c8-982b-d616305f91d1.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/3468d2d6-ad61-4b44-8ebb-9b1a276077be.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/e8d50af3-65df-407b-acfc-9e549c0dbc26.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  html, body { margin: 0; padding: 0; background: #F6F8F2; }
+  * { box-sizing: border-box; }
+  a { color: #01403D; text-decoration: none; }
+  a:hover { color: #012A28; text-decoration: underline; }
+  input { font-family: inherit; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb { background: #D8E0D2; border: 3px solid transparent; background-clip: content-box; }
+</style>
+</helmet>
+<div style="font-family: Barlow, Helvetica, Arial, sans-serif; color: #1A1F1C; background: #F6F8F2; min-height: 100vh; -webkit-font-smoothing: antialiased">
+
+  <header style="background: #01403D; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 10px 24px; min-height: 64px; position: sticky; top: 0; z-index: 30">
+    <img src="assets/500f44f4-0298-4eed-ac81-22abbc12f6b8.png" alt="Nexus Global Business" style="width: 152px; height: auto; display: block; flex: none">
+    <nav style="display: flex; align-items: center; flex-wrap: wrap; gap: 2px; flex: 1; min-width: 0">
+      <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="9">
+        <button type="button" sc-camel-on-click="{{ item.go }}" style="display: flex; align-items: center; height: 40px; padding: 0 11px; border: 0; border-bottom: 3px solid {{ item.bar }}; background: transparent; cursor: pointer; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; white-space: nowrap; color: {{ item.color }}; border-radius: 8px" style-hover="color: #FFFFFF">{{ item.label }}</button>
+      </sc-for>
+    </nav>
+    <div style="display: flex; align-items: center; gap: 14px; flex: none">
+      <div style="display: flex; align-items: center; gap: 8px; padding: 7px 12px; background: #012A28; font-size: 10.5px; font-weight: 500; color: #FFFFFF; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 6px">
+        <span style="width: 7px; height: 7px; background: #B4F715; border-radius: 3px"></span>Conectado
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px; padding-left: 4px">
+        <span style="display: flex; align-items: center; gap: 5px; font-family: Poppins, sans-serif; font-size: 11px; font-weight: 500; color: #C6D3CC">Avisos <span style="background: #B4F715; color: #01403D; padding: 2px 6px">2</span></span>
+        <div style="width: 34px; height: 34px; background: #B4F715; color: #01403D; display: grid; place-items: center; font-family: Poppins, sans-serif; font-size: 11.5px; font-weight: 600; border-radius: 10px">BP</div>
+      </div>
+    </div>
+  </header>
+
+  <div style="padding: 24px 24px 40px; display: flex; flex-direction: column; gap: 20px; max-width: 1560px; margin: 0 auto">
+
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap">
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #5A6B63">
+          <span>Empresa de demonstração</span>
+          <span style="color: #B6C2B8">/</span>
+          <span style="color: #01403D">{{ screenTitle }}</span>
+        </div>
+        <h1 style="margin: 0; font-family: Poppins, sans-serif; font-size: 30px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; color: #01403D">{{ pageTitle }}</h1>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap">
+        <span style="display: flex; align-items: center; gap: 9px; background: #FFFFFF; border: 1px solid #D8E0D2; padding: 10px 12px; font-family: Poppins, sans-serif; font-size: 11px; font-weight: 500; color: #01403D; letter-spacing: 0.06em; border-radius: 12px">EXERCÍCIO DE 2026
+          <span style="width: 17px; height: 17px; background: #01403D; color: #B4F715; display: grid; place-items: center; font-size: 9.5px; border-radius: 10px">P</span>
+        </span>
+        <button type="button" style="height: 40px; padding: 0 15px; border: 1px solid #01403D; background: transparent; cursor: pointer; font-family: Poppins, sans-serif; font-size: 11px; font-weight: 500; color: #01403D; letter-spacing: 0.14em; text-transform: uppercase; border-radius: 8px" style-hover="background: #FFFFFF">Exportar</button>
+        <button type="button" style="height: 40px; padding: 0 15px; border: 1px solid #01403D; background: transparent; cursor: pointer; font-family: Poppins, sans-serif; font-size: 11px; font-weight: 500; color: #01403D; letter-spacing: 0.14em; text-transform: uppercase; border-radius: 8px" style-hover="background: #FFFFFF">Relatório</button>
+        <button type="button" style="height: 40px; padding: 0 18px; border: 0; background: #B4F715; color: #01403D; cursor: pointer; font-family: Poppins, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; border-radius: 8px" style-hover="background: #C7FA4A">Criar fatura</button>
+      </div>
+    </div>
+
+    <sc-if value="{{ showInventoryNotice }}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 16px 20px; background: #7E1C15; border-left: 4px solid #E0483A; border-radius: 12px">
+        <div style="display: flex; gap: 14px; max-width: 1000px">
+          <span style="font-size: 10.5px; font-weight: 500; color: #FFD9D4; letter-spacing: 0.18em; text-transform: uppercase; padding-top: 3px; flex: none">Aviso</span>
+          <p style="margin: 0; font-size: 13px; line-height: 1.55; color: #FBEAE8; text-wrap: pretty">Necessita de criar e finalizar o inventário final de 2025 até <strong style="color: #FFFFFF">31/01/2026</strong>. Após esta data, sem inventário criado e finalizado não poderá emitir documentos que movimentem stock.</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; flex: none">
+          <button type="button" style="border: 0; background: #FFFFFF; color: #7E1C15; padding: 10px 16px; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; cursor: pointer; border-radius: 8px" style-hover="background: #FBEAE8">Criar inventário final</button>
+          <button type="button" sc-camel-on-click="{{ dismissNotice }}" style="border: 1px solid #A8483F; background: transparent; color: #FBEAE8; font-size: 15px; cursor: pointer; width: 38px; height: 38px; border-radius: 8px">×</button>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isDashboard }}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-direction: column; gap: 20px">
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+          <sc-for list="{{ kpis }}" as="kpi" hint-placeholder-count="4">
+            <div style="background: #FFFFFF; border: 1px solid #D8E0D2; padding: 18px; display: flex; flex-direction: column; gap: 12px; border-radius: 12px">
+              <div style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">{{ kpi.label }}</div>
+              <div style="display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap">
+                <span style="font-family: Poppins, sans-serif; font-size: 25px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; color: {{ kpi.tone }}">{{ kpi.value }}</span>
+                <span style="font-family: Poppins, sans-serif; font-size: 11.5px; font-weight: 500; color: {{ kpi.deltaColor }}">{{ kpi.delta }}</span>
+              </div>
+              <div style="display: flex; align-items: flex-end; gap: 2px; height: 34px">
+                <sc-for list="{{ kpi.spark }}" as="b" hint-placeholder-count="16">
+                  <div style="flex: 1; background: {{ b.color }}; height: {{ b.h }}; border-radius: 2px"></div>
+                </sc-for>
+              </div>
+              <div style="font-size: 11.5px; color: #5A6B63">{{ kpi.hint }}</div>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start">
+
+          <section style="background: #FFFFFF; border: 1px solid #D8E0D2; grid-column: span 2; min-width: 0; border-radius: 12px">
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 18px 20px; border-bottom: 1px solid #D8E0D2">
+              <div style="display: flex; flex-direction: column; gap: 4px">
+                <h2 style="margin: 0; font-family: Poppins, sans-serif; font-size: 17px; font-weight: 500; color: #01403D">As suas vendas</h2>
+                <p style="margin: 0; font-size: 12.5px; color: #5A6B63">Faturação mensal comparada com o exercício anterior.</p>
+              </div>
+              <div style="display: flex; border: 1px solid #D8E0D2; border-radius: 12px">
+                <sc-for list="{{ ranges }}" as="r" hint-placeholder-count="3">
+                  <button type="button" sc-camel-on-click="{{ r.go }}" style="border: 0; padding: 9px 16px; cursor: pointer; font-family: Poppins, sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; background: {{ r.bg }}; color: {{ r.color }}; border-radius: 8px">{{ r.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(220px, 1fr)">
+              <div style="padding: 20px; display: flex; flex-direction: column; gap: 16px; min-width: 0">
+                <div style="display: flex; gap: 18px; flex-wrap: wrap">
+                  <span style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #3A4A43"><span style="width: 9px; height: 9px; background: #01403D; border-radius: 3px"></span>Ano atual 2026</span>
+                  <span style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #3A4A43"><span style="width: 9px; height: 9px; background: #D8E0D2; border-radius: 3px"></span>Ano anterior 2025</span>
+                </div>
+                <div style="display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 8px">
+                  <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; font-size: 10.5px; color: #5A6B63; font-weight: 500; height: 226px; padding-bottom: 20px">
+                    <span>8k</span><span>6k</span><span>4k</span><span>2k</span><span>0</span>
+                  </div>
+                  <div style="height: 226px; display: flex; align-items: flex-end; gap: 8px; border-bottom: 1px solid #D8E0D2; background: linear-gradient(to bottom, #EDF1E9 1px, transparent 1px) 0 0 / 100% 51.5px">
+                    <sc-for list="{{ salesMonths }}" as="m" hint-placeholder-count="5">
+                      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 7px; height: 100%; justify-content: flex-end; min-width: 0">
+                        <div style="display: flex; align-items: flex-end; justify-content: center; gap: 3px; width: 100%; height: 100%">
+                          <div title="{{ m.tipA }}" style="width: 40%; max-width: 26px; background: #01403D; height: {{ m.hA }}; transition: height .45s ease; border-radius: 6px 6px 0 0" style-hover="background: #B4F715"></div>
+                          <div title="{{ m.tipB }}" style="width: 40%; max-width: 26px; background: #D8E0D2; height: {{ m.hB }}; transition: height .45s ease; border-radius: 6px 6px 0 0" style-hover="background: #B9C7B2"></div>
+                        </div>
+                        <div style="font-size: 10.5px; font-weight: 500; color: #5A6B63; height: 14px; letter-spacing: 0.1em; text-transform: uppercase">{{ m.label }}</div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </div>
+              </div>
+              <div style="border-left: 1px solid #D8E0D2; padding: 20px; display: flex; flex-direction: column; gap: 18px">
+                <div style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Metas do exercício</div>
+                <sc-for list="{{ goals }}" as="g" hint-placeholder-count="4">
+                  <div style="display: flex; flex-direction: column; gap: 7px">
+                    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px">
+                      <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.14em; text-transform: uppercase">{{ g.label }}</span>
+                      <span style="font-size: 11px; color: #8A9A92">{{ g.pctLabel }}</span>
+                    </div>
+                    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px">
+                      <span style="font-family: Poppins, sans-serif; font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; color: #01403D">{{ g.value }}</span>
+                      <span style="font-size: 12.5px; color: #5A6B63; font-variant-numeric: tabular-nums">{{ g.target }}</span>
+                    </div>
+                    <div style="height: 5px; background: #EDF1E9; border-radius: 999px"><div style="height: 100%; background: {{ g.color }}; width: {{ g.w }}"></div></div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </section>
+
+          <section style="background: #FFFFFF; border: 1px solid #D8E0D2; min-width: 0; border-radius: 12px">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px; background: #7E1C15; border-radius: 12px">
+              <h2 style="margin: 0; font-family: Poppins, sans-serif; font-size: 17px; font-weight: 500; color: #FFFFFF">Os seus gastos</h2>
+              <button type="button" style="border: 1px solid #FFFFFF; background: transparent; color: #FFFFFF; padding: 8px 13px; font-family: Poppins, sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; border-radius: 8px" style-hover="background: #FFFFFF; color: #7E1C15">Nova despesa</button>
+            </div>
+            <div style="padding: 20px; display: flex; flex-direction: column; gap: 18px">
+              <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap">
+                <div style="display: flex; flex-direction: column; gap: 4px">
+                  <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Total do exercício</span>
+                  <span style="font-family: Poppins, sans-serif; font-size: 25px; font-weight: 600; letter-spacing: -0.03em; color: #8E241B; font-variant-numeric: tabular-nums">€ 100.551,30</span>
+                </div>
+                <span style="font-size: 10.5px; font-weight: 500; color: #8E241B; background: #F6E4E2; padding: 5px 9px; letter-spacing: 0.14em; text-transform: uppercase; border-radius: 6px">4 categorias</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 14px">
+                <sc-for list="{{ expenseRows }}" as="e" hint-placeholder-count="4">
+                  <div style="display: flex; flex-direction: column; gap: 6px">
+                    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px">
+                      <span style="font-size: 12.5px; font-weight: 500; color: #1A1F1C">{{ e.label }}</span>
+                      <span style="font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 600; font-variant-numeric: tabular-nums; color: #8E241B">{{ e.value }}</span>
+                    </div>
+                    <div style="height: 8px; background: #F6E4E2; border-radius: 999px"><div style="height: 100%; background: {{ e.color }}; width: {{ e.w }}"></div></div>
+                    <div style="font-size: 11px; color: #5A6B63">{{ e.hint }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; align-items: start">
+
+          <section style="background: #FFFFFF; border: 1px solid #D8E0D2; min-width: 0; border-radius: 12px">
+            <div style="padding: 16px 20px; border-bottom: 1px solid #D8E0D2">
+              <h2 style="margin: 0; font-family: Poppins, sans-serif; font-size: 16px; font-weight: 500; color: #01403D">Evolução de vendas</h2>
+            </div>
+            <div style="padding: 20px; display: flex; flex-direction: column; gap: 16px">
+              <div style="display: flex; flex-direction: column; gap: 10px">
+                <div style="display: flex; align-items: center; gap: 12px">
+                  <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.14em; text-transform: uppercase; min-width: 52px">2026</span>
+                  <div style="flex: 1; height: 10px; background: #EDF1E9; border-radius: 999px"><div style="height: 100%; background: #01403D; width: {{ salesBarNow }}"></div></div>
+                  <span style="font-family: Poppins, sans-serif; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; color: #01403D; min-width: 96px; text-align: right">€ 3.673,69</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px">
+                  <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.14em; text-transform: uppercase; min-width: 52px">2025</span>
+                  <div style="flex: 1; height: 10px; background: #EDF1E9; border-radius: 999px"><div style="height: 100%; background: #D8E0D2; width: 100%"></div></div>
+                  <span style="font-family: Poppins, sans-serif; font-size: 13px; font-weight: 500; font-variant-numeric: tabular-nums; color: #5A6B63; min-width: 96px; text-align: right">€ 13.847,30</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid #EDF1E9; padding-top: 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
+                <div style="display: flex; flex-direction: column; gap: 4px">
+                  <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.14em; text-transform: uppercase">Ticket médio</span>
+                  <span style="font-family: Poppins, sans-serif; font-size: 16px; font-weight: 600; color: #01403D; font-variant-numeric: tabular-nums">€ 612,28</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 4px">
+                  <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.14em; text-transform: uppercase">Documentos</span>
+                  <span style="font-family: Poppins, sans-serif; font-size: 16px; font-weight: 600; color: #01403D; font-variant-numeric: tabular-nums">6</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section style="background: #FFFFFF; border: 1px solid #D8E0D2; min-width: 0; border-radius: 12px">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 20px; border-bottom: 1px solid #D8E0D2">
+              <h2 style="margin: 0; font-family: Poppins, sans-serif; font-size: 16px; font-weight: 500; color: #01403D">Obrigações e tarefas</h2>
+              <a href="#tarefas" style="font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase">Ver todas</a>
+            </div>
+            <div style="display: flex; flex-direction: column">
+              <sc-for list="{{ tasks }}" as="t" hint-placeholder-count="4">
+                <div style="display: flex; align-items: center; gap: 14px; padding: 13px 20px; border-bottom: 1px solid #EDF1E9">
+                  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 42px; height: 42px; background: #F6F8F2; flex: none; border-radius: 12px">
+                    <span style="font-family: Poppins, sans-serif; font-size: 14px; font-weight: 600; line-height: 1; color: #01403D">{{ t.day }}</span>
+                    <span style="font-size: 10.5px; font-weight: 500; letter-spacing: 0.1em; color: #5A6B63">{{ t.month }}</span>
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1">
+                    <div style="font-family: Poppins, sans-serif; font-size: 13px; font-weight: 500; color: #1A1F1C">{{ t.title }}</div>
+                    <div style="font-size: 11.5px; color: #5A6B63">{{ t.meta }}</div>
+                  </div>
+                  <span style="font-size: 10.5px; font-weight: 500; padding: 5px 9px; flex: none; letter-spacing: 0.14em; text-transform: uppercase; background: {{ t.chipBg }}; color: {{ t.chipColor }}; border-radius: 6px">{{ t.status }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </section>
+
+          <section style="background: #FFFFFF; border: 1px solid #D8E0D2; min-width: 0; border-radius: 12px">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 20px; border-bottom: 1px solid #D8E0D2">
+              <h2 style="margin: 0; font-family: Poppins, sans-serif; font-size: 16px; font-weight: 500; color: #01403D">Documentos recentes</h2>
+              <button type="button" sc-camel-on-click="{{ goClientes }}" style="border: 0; background: transparent; color: #01403D; font-family: inherit; font-size: 10.5px; font-weight: 500; cursor: pointer; padding: 0; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 8px">Ver clientes</button>
+            </div>
+            <div style="display: flex; flex-direction: column">
+              <sc-for list="{{ recentDocs }}" as="d" hint-placeholder-count="5">
+                <div style="display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1px solid #EDF1E9">
+                  <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1">
+                    <span style="font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; color: #01403D">{{ d.ref }}</span>
+                    <span style="font-size: 11.5px; color: #5A6B63; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{ d.client }}</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px; flex: none">
+                    <span style="font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 600; font-variant-numeric: tabular-nums; color: {{ d.valueColor }}">{{ d.value }}</span>
+                    <span style="font-size: 10.5px; font-weight: 500; padding: 4px 8px; letter-spacing: 0.14em; text-transform: uppercase; background: {{ d.chipBg }}; color: {{ d.chipColor }}; border-radius: 6px">{{ d.status }}</span>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </section>
+        </div>
+
+        <section style="background: #FFFFFF; border: 1px solid #D8E0D2; border-radius: 12px">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 16px 20px; border-bottom: 1px solid #D8E0D2">
+            <h2 style="margin: 0; font-family: Poppins, sans-serif; font-size: 16px; font-weight: 500; color: #01403D">Resumo por cliente</h2>
+            <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Exercício de 2026</span>
+          </div>
+          <div style="overflow-x: auto; border-radius: 0 0 12px 12px">
+            <sc-raw-table style="width: 100%; border-collapse: collapse; min-width: 900px">
+              <sc-raw-thead>
+                <sc-raw-tr>
+                  <sc-raw-th style="border-bottom: 1px solid #D8E0D2; border-right: 1px solid #D8E0D2; padding: 12px 16px; background: #F6F8F2"></sc-raw-th>
+                  <sc-raw-th colspan="3" style="text-align: left; border-bottom: 1px solid #D8E0D2; border-right: 1px solid #D8E0D2; padding: 12px 16px; background: #F6F8F2; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; color: #01403D">Faturação</sc-raw-th>
+                  <sc-raw-th colspan="2" style="text-align: left; border-bottom: 1px solid #D8E0D2; border-right: 1px solid #D8E0D2; padding: 12px 16px; background: #F6F8F2; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; color: #7E1C15">Cobrança</sc-raw-th>
+                  <sc-raw-th style="text-align: left; border-bottom: 1px solid #D8E0D2; padding: 12px 16px; background: #F6F8F2; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; color: #01403D">Estado</sc-raw-th>
+                </sc-raw-tr>
+                <sc-raw-tr>
+                  <sc-raw-th style="text-align: left; border-bottom: 1px solid #D8E0D2; border-right: 1px solid #D8E0D2; padding: 11px 16px; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Cliente</sc-raw-th>
+                  <sc-raw-th style="text-align: right; border-bottom: 1px solid #D8E0D2; padding: 11px 16px; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Docs.</sc-raw-th>
+                  <sc-raw-th style="text-align: right; border-bottom: 1px solid #D8E0D2; padding: 11px 16px; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Faturado</sc-raw-th>
+                  <sc-raw-th style="text-align: right; border-bottom: 1px solid #D8E0D2; border-right: 1px solid #D8E0D2; padding: 11px 16px; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Peso</sc-raw-th>
+                  <sc-raw-th style="text-align: right; border-bottom: 1px solid #D8E0D2; padding: 11px 16px; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Recebido</sc-raw-th>
+                  <sc-raw-th style="text-align: right; border-bottom: 1px solid #D8E0D2; border-right: 1px solid #D8E0D2; padding: 11px 16px; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Pendente</sc-raw-th>
+                  <sc-raw-th style="text-align: left; border-bottom: 1px solid #D8E0D2; padding: 11px 16px; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Situação</sc-raw-th>
+                </sc-raw-tr>
+              </sc-raw-thead>
+              <sc-raw-tbody>
+                <sc-for list="{{ summaryRows }}" as="r" hint-placeholder-count="6">
+                  <sc-raw-tr sc-camel-on-click="{{ r.open }}" style="cursor: pointer" style-hover="background: #F6F8F2">
+                    <sc-raw-td style="border-bottom: 1px solid #EDF1E9; border-right: 1px solid #D8E0D2; padding: 13px 16px; font-size: 12.5px; font-weight: 500; color: #01403D; max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">{{ r.name }}</sc-raw-td>
+                    <sc-raw-td style="border-bottom: 1px solid #EDF1E9; padding: 13px 16px; font-size: 12.5px; text-align: right; font-variant-numeric: tabular-nums; color: #5A6B63">{{ r.docs }}</sc-raw-td>
+                    <sc-raw-td style="border-bottom: 1px solid #EDF1E9; padding: 13px 16px; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; color: #01403D">{{ r.faturado }}</sc-raw-td>
+                    <sc-raw-td style="border-bottom: 1px solid #EDF1E9; border-right: 1px solid #D8E0D2; padding: 13px 16px; width: 130px">
+                      <div style="display: flex; align-items: center; gap: 9px">
+                        <div style="flex: 1; height: 6px; background: #EDF1E9; border-radius: 999px"><div style="height: 100%; background: #01403D; width: {{ r.w }}"></div></div>
+                        <span style="font-size: 11px; color: #5A6B63; font-variant-numeric: tabular-nums; min-width: 34px; text-align: right">{{ r.pct }}</span>
+                      </div>
+                    </sc-raw-td>
+                    <sc-raw-td style="border-bottom: 1px solid #EDF1E9; padding: 13px 16px; font-size: 12.5px; text-align: right; font-variant-numeric: tabular-nums; color: #1A1F1C">{{ r.recebido }}</sc-raw-td>
+                    <sc-raw-td style="border-bottom: 1px solid #EDF1E9; border-right: 1px solid #D8E0D2; padding: 13px 16px; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; color: {{ r.pendenteColor }}">{{ r.pendente }}</sc-raw-td>
+                    <sc-raw-td style="border-bottom: 1px solid #EDF1E9; padding: 13px 16px"><span style="font-size: 10.5px; font-weight: 500; padding: 4px 8px; letter-spacing: 0.14em; text-transform: uppercase; background: {{ r.chipBg }}; color: {{ r.chipColor }}; border-radius: 6px">{{ r.situacao }}</span></sc-raw-td>
+                  </sc-raw-tr>
+                </sc-for>
+              </sc-raw-tbody>
+            </sc-raw-table>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isClientes }}" hint-placeholder-val="{{ false }}">
+      <section style="background: #FFFFFF; border: 1px solid #D8E0D2; border-radius: 12px">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; padding: 18px 20px; border-bottom: 1px solid #D8E0D2">
+          <div style="display: flex; align-items: center; gap: 12px; flex: 1; min-width: 240px; border: 1px solid #D8E0D2; border-bottom: 2px solid #01403D; padding: 0 14px; height: 42px; background: #F6F8F2; border-radius: 12px">
+            <span style="color: #5A6B63; font-size: 13px">⌕</span>
+            <input type="text" value="{{ query }}" sc-camel-on-change="{{ onSearch }}" placeholder="Pesquisar por nome ou NIF" style="flex: 1; border: 0; outline: none; background: transparent; font-size: 13.5px; color: #1A1F1C; min-width: 0">
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap">
+            <sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
+              <button type="button" sc-camel-on-click="{{ f.go }}" style="border: 1px solid {{ f.border }}; background: {{ f.bg }}; color: {{ f.color }}; padding: 9px 14px; cursor: pointer; font-family: Poppins, sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; border-radius: 8px">{{ f.label }}</button>
+            </sc-for>
+          </div>
+          <div style="font-family: Poppins, sans-serif; font-size: 10.5px; font-weight: 500; color: #01403D; background: #EDF1E9; padding: 9px 14px; letter-spacing: 0.14em; text-transform: uppercase; border-radius: 6px">{{ resultCount }}</div>
+          <button type="button" style="height: 40px; padding: 0 18px; border: 0; background: #B4F715; color: #01403D; cursor: pointer; font-family: Poppins, sans-serif; font-size: 10.5px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; border-radius: 8px" style-hover="background: #C7FA4A">+ Novo cliente</button>
+        </div>
+
+        <div style="overflow-x: auto; border-radius: 0 0 12px 12px">
+          <sc-raw-table style="width: 100%; border-collapse: collapse; min-width: 900px">
+            <sc-raw-thead>
+              <sc-raw-tr style="background: #F6F8F2">
+                <sc-raw-th style="text-align: left; padding: 12px 16px; border-bottom: 1px solid #D8E0D2; width: 40px"><span style="display: inline-block; width: 14px; height: 14px; border: 1.5px solid #B6C2B8; border-radius: 3px"></span></sc-raw-th>
+                <sc-raw-th sc-camel-on-click="{{ sortByNif }}" style="text-align: left; padding: 12px 10px; border-bottom: 1px solid #D8E0D2; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; white-space: nowrap">NIF {{ nifArrow }}</sc-raw-th>
+                <sc-raw-th style="text-align: left; padding: 12px 10px; border-bottom: 1px solid #D8E0D2; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase; white-space: nowrap">Último aviso</sc-raw-th>
+                <sc-raw-th sc-camel-on-click="{{ sortByName }}" style="text-align: left; padding: 12px 10px; border-bottom: 1px solid #D8E0D2; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer">Nome {{ nameArrow }}</sc-raw-th>
+                <sc-raw-th style="text-align: right; padding: 12px 10px; border-bottom: 1px solid #D8E0D2; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase; white-space: nowrap">Saldo</sc-raw-th>
+                <sc-raw-th style="text-align: center; padding: 12px 10px; border-bottom: 1px solid #D8E0D2; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Sub-conta</sc-raw-th>
+                <sc-raw-th style="text-align: center; padding: 12px 10px; border-bottom: 1px solid #D8E0D2; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">S.P.</sc-raw-th>
+                <sc-raw-th style="text-align: center; padding: 12px 10px; border-bottom: 1px solid #D8E0D2; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">RIC</sc-raw-th>
+                <sc-raw-th style="padding: 12px 16px; border-bottom: 1px solid #D8E0D2; width: 44px"></sc-raw-th>
+              </sc-raw-tr>
+            </sc-raw-thead>
+            <sc-raw-tbody>
+              <sc-for list="{{ rows }}" as="r" hint-placeholder-count="10">
+                <sc-raw-tr sc-camel-on-click="{{ r.open }}" style="cursor: pointer; background: {{ r.rowBg }}; border-radius: 8px" style-hover="background: #EDF1E9">
+                  <sc-raw-td style="padding: {{ rowPad }} 16px; border-bottom: 1px solid #EDF1E9"><span style="display: inline-block; width: 14px; height: 14px; border: 1.5px solid #B6C2B8; border-radius: 3px"></span></sc-raw-td>
+                  <sc-raw-td style="padding: {{ rowPad }} 10px; border-bottom: 1px solid #EDF1E9; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; color: #01403D; font-variant-numeric: tabular-nums; white-space: nowrap">{{ r.nif }}</sc-raw-td>
+                  <sc-raw-td style="padding: {{ rowPad }} 10px; border-bottom: 1px solid #EDF1E9; font-size: 12.5px; color: #5A6B63; font-variant-numeric: tabular-nums; white-space: nowrap">{{ r.aviso }}</sc-raw-td>
+                  <sc-raw-td style="padding: {{ rowPad }} 10px; border-bottom: 1px solid #EDF1E9; font-size: 12.5px; color: #1A1F1C">{{ r.name }}</sc-raw-td>
+                  <sc-raw-td style="padding: {{ rowPad }} 10px; border-bottom: 1px solid #EDF1E9; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; color: {{ r.saldoColor }}">{{ r.saldo }}</sc-raw-td>
+                  <sc-raw-td style="padding: {{ rowPad }} 10px; border-bottom: 1px solid #EDF1E9; font-size: 12px; color: #5A6B63; text-align: center; font-variant-numeric: tabular-nums">{{ r.sub }}</sc-raw-td>
+                  <sc-raw-td style="padding: {{ rowPad }} 10px; border-bottom: 1px solid #EDF1E9; text-align: center; font-size: 13px; font-weight: 600; color: {{ r.spColor }}">{{ r.sp }}</sc-raw-td>
+                  <sc-raw-td style="padding: {{ rowPad }} 10px; border-bottom: 1px solid #EDF1E9; text-align: center; font-size: 13px; font-weight: 600; color: {{ r.ricColor }}">{{ r.ric }}</sc-raw-td>
+                  <sc-raw-td style="padding: {{ rowPad }} 16px; border-bottom: 1px solid #EDF1E9; text-align: center; color: #8A9A92; font-size: 15px; font-weight: 600">⋮</sc-raw-td>
+                </sc-raw-tr>
+              </sc-for>
+            </sc-raw-tbody>
+          </sc-raw-table>
+        </div>
+
+        <sc-if value="{{ isEmpty }}" hint-placeholder-val="{{ false }}">
+          <div style="padding: 40px 20px; text-align: center; display: flex; flex-direction: column; gap: 7px">
+            <div style="font-family: Poppins, sans-serif; font-size: 16px; font-weight: 500; color: #01403D">Sem resultados para “{{ query }}”</div>
+            <div style="font-size: 13.5px; color: #5A6B63">Tente pesquisar por outro nome ou número de identificação fiscal.</div>
+          </div>
+        </sc-if>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 14px 20px; border-top: 1px solid #D8E0D2">
+          <div style="display: flex; align-items: center; gap: 10px; font-size: 12.5px; color: #5A6B63">
+            <span>Linhas por página</span>
+            <span style="border: 1px solid #D8E0D2; padding: 6px 10px; font-family: Poppins, sans-serif; font-weight: 500; color: #01403D; border-radius: 12px">10 ▾</span>
+            <span style="font-variant-numeric: tabular-nums">{{ rangeLabel }}</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 5px">
+            <button type="button" sc-camel-on-click="{{ prevPage }}" style="width: 34px; height: 34px; border: 1px solid #D8E0D2; background: #FFFFFF; cursor: pointer; color: #5A6B63; font-size: 13px; border-radius: 8px" style-hover="border-color: #01403D; color: #01403D">‹</button>
+            <sc-for list="{{ pages }}" as="p" hint-placeholder-count="3">
+              <button type="button" sc-camel-on-click="{{ p.go }}" style="min-width: 34px; height: 34px; border: 1px solid {{ p.border }}; background: {{ p.bg }}; color: {{ p.color }}; cursor: pointer; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; border-radius: 8px">{{ p.n }}</button>
+            </sc-for>
+            <button type="button" sc-camel-on-click="{{ nextPage }}" style="width: 34px; height: 34px; border: 1px solid #D8E0D2; background: #FFFFFF; cursor: pointer; color: #5A6B63; font-size: 13px; border-radius: 8px" style-hover="border-color: #01403D; color: #01403D">›</button>
+          </div>
+        </div>
+      </section>
+    </sc-if>
+
+    <sc-if value="{{ isModule }}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <p style="margin: 0; font-size: 14px; color: #5A6B63; line-height: 1.55; max-width: 740px">{{ moduleSubtitle }}</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+          <sc-for list="{{ moduleKpis }}" as="kpi" hint-placeholder-count="4">
+            <div style="background: #FFFFFF; border: 1px solid #D8E0D2; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 12px">
+              <div style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">{{ kpi.label }}</div>
+              <div style="display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap">
+                <span style="font-family: Poppins, sans-serif; font-size: 25px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; color: {{ kpi.tone }}">{{ kpi.value }}</span>
+                <span style="font-family: Poppins, sans-serif; font-size: 11.5px; font-weight: 500; color: {{ kpi.deltaColor }}">{{ kpi.delta }}</span>
+              </div>
+              <div style="display: flex; align-items: flex-end; gap: 2px; height: 34px">
+                <sc-for list="{{ kpi.spark }}" as="b" hint-placeholder-count="18">
+                  <div style="flex: 1; background: {{ b.color }}; height: {{ b.h }}; border-radius: 2px"></div>
+                </sc-for>
+              </div>
+              <div style="font-size: 11.5px; color: #5A6B63">{{ kpi.hint }}</div>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(280px, 1fr); gap: 20px; align-items: start">
+          <section style="background: #FFFFFF; border: 1px solid #D8E0D2; border-radius: 12px; min-width: 0">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 16px 20px; border-bottom: 1px solid #D8E0D2">
+              <h2 style="margin: 0; font-family: Poppins, sans-serif; font-size: 16px; font-weight: 500; color: #01403D">{{ tableTitle }}</h2>
+              <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">{{ tableMeta }}</span>
+            </div>
+            <div style="overflow-x: auto; border-radius: 0 0 12px 12px">
+              <sc-raw-table style="width: 100%; border-collapse: collapse; min-width: 760px">
+                <sc-raw-thead>
+                  <sc-raw-tr style="background: #F6F8F2">
+                    <sc-for list="{{ tableCols }}" as="col" hint-placeholder-count="6">
+                      <sc-raw-th style="padding: 12px 16px; border-bottom: 1px solid #D8E0D2; font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase; white-space: nowrap; text-align: {{ col.align }}">{{ col.label }}</sc-raw-th>
+                    </sc-for>
+                  </sc-raw-tr>
+                </sc-raw-thead>
+                <sc-raw-tbody>
+                  <sc-for list="{{ moduleRows }}" as="r" hint-placeholder-count="5">
+                    <sc-raw-tr style="background: {{ r.rowBg }}" style-hover="background: #EDF1E9">
+                      <sc-for list="{{ r.cells }}" as="cl" hint-placeholder-count="6">
+                        <sc-raw-td style="padding: 13px 16px; border-bottom: 1px solid #EDF1E9; text-align: {{ cl.align }}">
+                          <span style="display: inline-block; font-family: {{ cl.font }}; font-size: {{ cl.size }}; font-weight: {{ cl.weight }}; color: {{ cl.color }}; background: {{ cl.chipBg }}; padding: {{ cl.pad }}; border-radius: 6px; letter-spacing: {{ cl.tracking }}; text-transform: {{ cl.transform }}; font-variant-numeric: {{ cl.nums }}; white-space: nowrap">{{ cl.text }}</span>
+                        </sc-raw-td>
+                      </sc-for>
+                    </sc-raw-tr>
+                  </sc-for>
+                </sc-raw-tbody>
+              </sc-raw-table>
+            </div>
+          </section>
+
+          <div style="display: flex; flex-direction: column; gap: 20px; min-width: 0">
+            <sc-for list="{{ modulePanels }}" as="p" hint-placeholder-count="2">
+              <section style="background: #FFFFFF; border: 1px solid #D8E0D2; border-radius: 12px">
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 20px; border-bottom: 1px solid #D8E0D2">
+                  <h2 style="margin: 0; font-family: Poppins, sans-serif; font-size: 15px; font-weight: 500; color: #01403D">{{ p.title }}</h2>
+                  <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">{{ p.meta }}</span>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  <sc-for list="{{ p.items }}" as="it" hint-placeholder-count="3">
+                    <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 20px; border-bottom: 1px solid #EDF1E9">
+                      <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+                        <span style="font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; color: #1A1F1C">{{ it.label }}</span>
+                        <span style="font-size: 11.5px; color: #5A6B63">{{ it.sub }}</span>
+                      </div>
+                      <span style="font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 600; color: #01403D; font-variant-numeric: tabular-nums; flex: none">{{ it.value }}</span>
+                      <sc-if value="{{ it.chip }}" hint-placeholder-val="{{ false }}">
+                        <span style="font-size: 10.5px; font-weight: 500; padding: 5px 9px; border-radius: 6px; letter-spacing: 0.14em; text-transform: uppercase; flex: none; background: {{ it.chipBg }}; color: {{ it.chipColor }}">{{ it.chip }}</span>
+                      </sc-if>
+                    </div>
+                  </sc-for>
+                </div>
+              </section>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isPlaceholder }}" hint-placeholder-val="{{ false }}">
+      <section style="background: #FFFFFF; border: 1px solid #D8E0D2; padding: 60px 28px; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; border-radius: 12px">
+        <div style="width: 54px; height: 54px; background: #01403D; display: grid; place-items: center; padding: 9px; border-radius: 10px"><img src="assets/b8073133-30ee-4dee-8a8b-ec8fb07ac317.png" alt="Nexus" style="width: 100%; height: auto; display: block"></div>
+        <h1 style="margin: 0; font-family: Poppins, sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.02em; color: #01403D">{{ screenTitle }}</h1>
+        <p style="margin: 0; max-width: 470px; font-size: 14px; color: #5A6B63; line-height: 1.6">Módulo previsto na estrutura do CRM. A diagramação segue a mesma grelha de cartões e tabelas do painel de controlo e do módulo de clientes.</p>
+        <button type="button" sc-camel-on-click="{{ goDashboard }}" style="margin-top: 8px; border: 0; background: #B4F715; color: #01403D; padding: 12px 20px; font-family: Poppins, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; border-radius: 8px" style-hover="background: #C7FA4A">Voltar ao painel</button>
+      </section>
+    </sc-if>
+
+    <footer style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 18px 0 0; border-top: 1px solid #D8E0D2; font-size: 12px; color: #5A6B63">
+      <div style="display: flex; gap: 20px; flex-wrap: wrap">
+        <a href="#termos">Termos e condições</a>
+        <a href="#privacidade">Política de privacidade</a>
+        <a href="#ajuda">Centro de ajuda</a>
+        <a href="#formacao">Formação</a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; font-variant-numeric: tabular-nums">
+        <span>Última atualização: 12/09/2026 · v1.8.0</span>
+        <span style="width: 1px; height: 20px; background: #D8E0D2"></span>
+        <img src="assets/fad96ffd-7eb9-4bb6-a586-54bb083e25f0.png" alt="Nexus Global Business" style="width: 22px; height: 22px; display: block">
+      </div>
+    </footer>
+  </div>
+
+  <sc-if value="{{ detail }}" hint-placeholder-val="{{ false }}">
+    <div sc-camel-on-click="{{ closeDetail }}" style="position: fixed; inset: 0; background: rgba(1, 42, 40, 0.62); display: flex; justify-content: flex-end; z-index: 40">
+      <div sc-camel-on-click="{{ stop }}" style="width: min(430px, 92vw); background: #FFFFFF; height: 100%; overflow-y: auto; display: flex; flex-direction: column; border-left: 4px solid #B4F715">
+        <div style="padding: 22px; background: #01403D; color: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #B4F715">Ficha de cliente</span>
+            <button type="button" sc-camel-on-click="{{ closeDetail }}" style="border: 1px solid #1C4F4A; background: transparent; color: #B4F715; width: 30px; height: 30px; cursor: pointer; font-size: 14px; border-radius: 8px">×</button>
+          </div>
+          <div style="display: flex; gap: 14px; align-items: center">
+            <div style="width: 46px; height: 46px; background: #B4F715; color: #01403D; display: grid; place-items: center; font-family: Poppins, sans-serif; font-size: 14px; font-weight: 600; flex: none; border-radius: 10px">{{ detail.initials }}</div>
+            <div style="display: flex; flex-direction: column; gap: 5px; min-width: 0">
+              <div style="font-family: Poppins, sans-serif; font-size: 16px; font-weight: 500; line-height: 1.25">{{ detail.name }}</div>
+              <div style="font-size: 12px; color: #A8BDB2; font-variant-numeric: tabular-nums">NIF {{ detail.nif }} · Sub-conta {{ detail.sub }}</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap">
+            <span style="font-size: 10.5px; font-weight: 500; padding: 6px 10px; background: #012A28; color: #B4F715; letter-spacing: 0.14em; text-transform: uppercase; border-radius: 6px">{{ detail.estado }}</span>
+            <span style="font-size: 10.5px; font-weight: 500; padding: 6px 10px; background: #012A28; color: #E8EFE6; letter-spacing: 0.14em; text-transform: uppercase; border-radius: 6px">{{ detail.regime }}</span>
+          </div>
+        </div>
+        <div style="padding: 22px; display: flex; flex-direction: column; gap: 24px">
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #D8E0D2; border: 1px solid #D8E0D2; border-radius: 12px">
+            <div style="background: #FFFFFF; padding: 15px; display: flex; flex-direction: column; gap: 7px">
+              <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Saldo atual</span>
+              <span style="font-family: Poppins, sans-serif; font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; color: {{ detail.saldoColor }}">{{ detail.saldo }}</span>
+            </div>
+            <div style="background: #FFFFFF; padding: 15px; display: flex; flex-direction: column; gap: 7px">
+              <span style="font-size: 10.5px; font-weight: 500; color: #5A6B63; letter-spacing: 0.18em; text-transform: uppercase">Faturado 2026</span>
+              <span style="font-family: Poppins, sans-serif; font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; color: #01403D">{{ detail.faturado }}</span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <h3 style="margin: 0; font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #5A6B63">Dados de contacto</h3>
+            <sc-for list="{{ detail.fields }}" as="f" hint-placeholder-count="5">
+              <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding-bottom: 10px; border-bottom: 1px solid #EDF1E9">
+                <span style="font-size: 12.5px; color: #5A6B63">{{ f.label }}</span>
+                <span style="font-size: 13px; font-weight: 500; text-align: right; color: #1A1F1C">{{ f.value }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <h3 style="margin: 0; font-size: 10.5px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #5A6B63">Últimos documentos</h3>
+            <sc-for list="{{ detail.docs }}" as="d" hint-placeholder-count="3">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid #D8E0D2; padding: 12px 13px; border-radius: 12px">
+                <div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+                  <span style="font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; color: #01403D">{{ d.ref }}</span>
+                  <span style="font-size: 11.5px; color: #5A6B63">{{ d.date }}</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; flex: none">
+                  <span style="font-family: Poppins, sans-serif; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; color: #01403D">{{ d.value }}</span>
+                  <span style="font-size: 10.5px; font-weight: 500; padding: 5px 8px; letter-spacing: 0.14em; text-transform: uppercase; background: {{ d.chipBg }}; color: {{ d.chipColor }}; border-radius: 6px">{{ d.status }}</span>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap">
+            <button type="button" style="flex: 1; min-width: 130px; border: 0; background: #B4F715; color: #01403D; padding: 13px 16px; font-family: Poppins, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; border-radius: 8px" style-hover="background: #C7FA4A">Criar fatura</button>
+            <button type="button" style="flex: 1; min-width: 130px; border: 1px solid #01403D; background: transparent; color: #01403D; padding: 13px 16px; font-family: Poppins, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; border-radius: 8px" style-hover="background: #F6F8F2">Enviar aviso</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#B4F715&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#B4F715&quot;,&quot;#C7FA4A&quot;,&quot;#A5E60D&quot;],&quot;section&quot;:&quot;Identidade&quot;},&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Confortável&quot;,&quot;options&quot;:[&quot;Confortável&quot;,&quot;Compacta&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tabela&quot;}}">
+class Component extends DCLogic {
+  state = { screen: "dashboard", range: "Mês", query: "", page: 1, sortKey: "name", sortDir: 1, filter: "Todos", detailId: null, notice: true };
+
+  clients = [
+    { nif: "506875164", name: "ANA BRUNO&ASSOCIADOS - SOCIEDADE DE ADVOGADOS, SP, RL", sub: "001", aviso: "—", saldo: 1240.5, faturado: 3200, estado: "Ativo", regime: "IVA trimestral", docs: 6 },
+    { nif: "518532925", name: "AZINHAGA PROTAGONISTA, UNIPESSOAL, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "IVA trimestral", docs: 0 },
+    { nif: "518068684", name: "BRAINROCKET PORTUGAL, UNIPESSOAL, LDA", sub: "999", aviso: "12/07/2026", saldo: 984.15, faturado: 984.15, estado: "Ativo", regime: "IVA mensal", docs: 2 },
+    { nif: "507720946", name: "BRAVEMIND - CONSULTADORIA EM RECURSOS HUMANOS LDA", sub: "999", aviso: "—", saldo: 0, faturado: 450, estado: "Ativo", regime: "IVA trimestral", docs: 1 },
+    { nif: "517143500", name: "BRZ TAX HELP DESK UNIP LDA", sub: "999", aviso: "—", saldo: -120.4, faturado: 620, estado: "Ativo", regime: "IVA trimestral", docs: 3 },
+    { nif: "999999990", name: "Consumidor Final", sub: "999", aviso: "—", saldo: 0, faturado: 86.4, estado: "Ativo", regime: "Isento", docs: 4 },
+    { nif: "516946919", name: "CRISPY EMOTIONS, UNIPESSOAL, LDA.", sub: "999", aviso: "—", saldo: 310, faturado: 310, estado: "Ativo", regime: "IVA trimestral", docs: 1 },
+    { nif: "517143501", name: "Desconhecido", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Inativo", regime: "Isento", docs: 0 },
+    { nif: "518044963", name: "DOURADO NÓMADA, UNIPESSOAL, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "IVA trimestral", docs: 0 },
+    { nif: "517736268", name: "EQUADOR ARISTOCRATA, UNIPESSOAL, LDA", sub: "999", aviso: "05/08/2026", saldo: 742.8, faturado: 1180, estado: "Ativo", regime: "IVA trimestral", docs: 3 },
+    { nif: "518475140", name: "FRESH EXPORTS UNIPESSOAL LDA", sub: "999", aviso: "—", saldo: 0, faturado: 240, estado: "Ativo", regime: "IVA mensal", docs: 1 },
+    { nif: "517461005", name: "GETLOCALLISTA PT, UNIPESSOAL, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "IVA trimestral", docs: 0 },
+    { nif: "516667327", name: "GRIGGS INTERNATIONAL LDA", sub: "999", aviso: "—", saldo: 1580.25, faturado: 2460, estado: "Ativo", regime: "IVA mensal", docs: 5 },
+    { nif: "53.702.885/0001-37", name: "Instituto Dignóstico Adulto LTDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "Não residente", docs: 0 },
+    { nif: "517890210", name: "JARDIM ATLÂNTICO SERVIÇOS, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 130, estado: "Ativo", regime: "IVA trimestral", docs: 1 },
+    { nif: "518102344", name: "LUSO NORDESTE COMÉRCIO, UNIPESSOAL, LDA", sub: "999", aviso: "22/06/2026", saldo: 265.9, faturado: 540, estado: "Ativo", regime: "IVA trimestral", docs: 2 },
+    { nif: "514993027", name: "MARÉ ALTA CONSULTORIA, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Inativo", regime: "IVA trimestral", docs: 0 },
+    { nif: "517005418", name: "MINHO DIGITAL STUDIO, UNIPESSOAL, LDA", sub: "999", aviso: "—", saldo: 430, faturado: 860, estado: "Ativo", regime: "IVA trimestral", docs: 2 },
+    { nif: "518330742", name: "NOVA PONTE LOGÍSTICA, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "IVA mensal", docs: 0 },
+    { nif: "516214880", name: "OLIVEIRA & SANTOS CONTABILIDADE, LDA", sub: "999", aviso: "—", saldo: -58.2, faturado: 320, estado: "Ativo", regime: "IVA trimestral", docs: 2 },
+    { nif: "517664319", name: "PORTO VERDE ENERGIAS, UNIPESSOAL, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "IVA trimestral", docs: 0 },
+    { nif: "518556201", name: "QUINTA DO LARGO TURISMO, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "IVA trimestral", docs: 0 },
+    { nif: "515770934", name: "RIBEIRA TECH SOLUTIONS, LDA", sub: "999", aviso: "18/08/2026", saldo: 1102.4, faturado: 1102.4, estado: "Ativo", regime: "IVA mensal", docs: 4 },
+    { nif: "517448125", name: "SERRA DA ESTRELA ALIMENTAR, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 96.5, estado: "Ativo", regime: "IVA trimestral", docs: 1 },
+    { nif: "518619470", name: "TEJO IMPORT EXPORT, UNIPESSOAL, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "Não residente", docs: 0 },
+    { nif: "516338205", name: "URBANO ATELIER ARQUITETURA, LDA", sub: "999", aviso: "—", saldo: 189.75, faturado: 189.75, estado: "Ativo", regime: "IVA trimestral", docs: 1 },
+    { nif: "517920663", name: "VALE DO AVE INDÚSTRIA, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Inativo", regime: "IVA trimestral", docs: 0 },
+    { nif: "518744091", name: "VISTA MAR HOSPITALITY, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "IVA trimestral", docs: 0 },
+    { nif: "514608337", name: "XISTO CONSTRUÇÕES, UNIPESSOAL, LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "IVA trimestral", docs: 0 },
+    { nif: "517339508", name: "ZAMBUJEIRA SERVICES LDA", sub: "999", aviso: "—", saldo: 0, faturado: 0, estado: "Ativo", regime: "IVA trimestral", docs: 0 }
+  ];
+
+  screens = [
+    { id: "pessoal", label: "Área pessoal" },
+    { id: "dashboard", label: "Empresa", page: "Situação do negócio" },
+    { id: "clientes", label: "Clientes", page: "Clientes" },
+    { id: "vendas", label: "Vendas" },
+    { id: "compras", label: "Compras" },
+    { id: "bancos", label: "Bancos" },
+    { id: "salarios", label: "Salários" },
+    { id: "contabilidade", label: "Contabilidade" },
+    { id: "ativos", label: "Ativos" }
+  ];
+
+  eur(n) {
+    const fixed = Math.abs(n).toFixed(2);
+    const int = fixed.slice(0, -3).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    return (n < 0 ? "-€ " : "€ ") + int + "," + fixed.slice(-2);
+  }
+
+  initials(name) {
+    return name.replace(/[^A-Za-zÀ-ÿ ]/g, " ").trim().split(/\s+/).slice(0, 2).map(w => w[0].toUpperCase()).join("");
+  }
+
+  spark(seed, color) {
+    const out = [];
+    for (let i = 0; i < 18; i++) {
+      const v = 30 + Math.abs(Math.sin((i + 1) * seed) * 70);
+      out.push({ h: v.toFixed(0) + "%", color: i > 13 ? color : "#D8E0D2" });
+    }
+    return out;
+  }
+
+  cell(text, o) {
+    o = o || {};
+    return {
+      text, align: o.align || "left",
+      color: o.color || "#1A1F1C",
+      weight: o.weight || "400",
+      font: o.mono ? "Poppins, sans-serif" : "Barlow, sans-serif",
+      pad: o.chipBg ? "5px 9px" : "0",
+      chipBg: o.chipBg || "transparent",
+      size: o.chipBg ? "10.5px" : "12.5px",
+      tracking: o.chipBg ? "0.14em" : "0",
+      transform: o.chipBg ? "uppercase" : "none",
+      nums: o.mono ? "tabular-nums" : "normal"
+    };
+  }
+
+  moduleConfig() {
+    const P = "#01403D", V = "#8E241B", L = this.props.accentColor || "#B4F715";
+    const c = (t, o) => this.cell(t, o);
+    const num = (t, color) => c(t, { align: "right", mono: true, weight: "500", color: color || P });
+    const chip = (t, ok) => c(t, ok
+      ? { chipBg: "#EDF1E9", color: P, weight: "500" }
+      : { chipBg: "#F6E4E2", color: V, weight: "500" });
+    const k = (label, value, tone, delta, deltaColor, hint, seed) =>
+      ({ label, value, tone, delta, deltaColor, hint, spark: this.spark(seed, tone === V ? "#C2564A" : P) });
+
+    return {
+      pessoal: {
+        title: "Área pessoal",
+        subtitle: "Atalhos, tarefas atribuídas e notificações do seu utilizador.",
+        kpis: [
+          k("Empresas no acesso", "1", P, "Ativa", P, "Empresa de demonstração", 0.5),
+          k("Tarefas atribuídas", "4", P, "1 vencida", V, "Prazo mais próximo: 31/01/2026", 0.9),
+          k("Avisos não lidos", "2", P, "Novos", P, "Inventário e IVA do 3.º trimestre", 1.3),
+          k("Documentos este mês", "21", P, "↑ 6", P, "Emitidos entre 1 e 12 de setembro", 1.7)
+        ],
+        panels: [
+          { title: "Acesso direto", meta: "Atalhos", items: [
+            { label: "Criar fatura", sub: "Vendas · série FT 2026", value: "→" },
+            { label: "Nova despesa", sub: "Compras · lançamento rápido", value: "→" },
+            { label: "Novo cliente", sub: "Entidades · ficha completa", value: "→" },
+            { label: "Exportar SAF-T (PT)", sub: "Importação e exportação", value: "→" }
+          ] },
+          { title: "Notificações", meta: "2 novas", items: [
+            { label: "Inventário final de 2025", sub: "Vence a 31/01/2026", chip: "Pendente", chipBg: "#7E1C15", chipColor: "#FFFFFF" },
+            { label: "Declaração periódica de IVA", sub: "3.º trimestre · até 15/10/2026", chip: "A decorrer", chipBg: "#EDF1E9", chipColor: P },
+            { label: "SAF-T de faturação comunicado", sub: "Agosto de 2026", chip: "Concluído", chipBg: "#D8E0D2", chipColor: P }
+          ] }
+        ],
+        table: {
+          title: "Atividade recente",
+          meta: "Últimos 7 dias",
+          cols: [{ label: "Data" }, { label: "Utilizador" }, { label: "Ação" }, { label: "Módulo" }],
+          rows: [
+            [c("12/09/2026", { mono: true }), c("Bruna Particheli", { weight: "500" }), c("Emitiu a fatura FT 2026/128"), chip("Vendas", true)],
+            [c("11/09/2026", { mono: true }), c("Bruna Particheli", { weight: "500" }), c("Registou despesa de ativos não correntes"), chip("Compras", false)],
+            [c("10/09/2026", { mono: true }), c("Equipa Nexus", { weight: "500" }), c("Conciliou 14 movimentos bancários"), chip("Bancos", true)],
+            [c("08/09/2026", { mono: true }), c("Equipa Nexus", { weight: "500" }), c("Processou vencimentos de agosto"), chip("Salários", true)],
+            [c("05/09/2026", { mono: true }), c("Bruna Particheli", { weight: "500" }), c("Criou a ficha do cliente Ribeira Tech"), chip("Clientes", true)]
+          ]
+        }
+      },
+
+      vendas: {
+        title: "Vendas",
+        subtitle: "Documentos emitidos, recebimentos e séries do exercício de 2026.",
+        kpis: [
+          k("Faturado jan – 12 set", this.eur(3673.69), P, "↓ 73,5%", V, "2025 no mesmo período: € 13.847,30", 0.7),
+          k("Pendente de recebimento", this.eur(4545.75), V, "5 documentos", V, "Mais antigo com 47 dias", 1.1),
+          k("Documentos emitidos", "21", P, "↑ 6 no mês", P, "14 faturas · 5 recibos · 2 notas", 0.4),
+          k("Ticket médio", this.eur(612.28), P, "↑ 4,2%", P, "Calculado sobre faturas emitidas", 1.5)
+        ],
+        panels: [
+          { title: "Séries de documentos", meta: "2026", items: [
+            { label: "FT 2026", sub: "Fatura", value: "14" },
+            { label: "FR 2026", sub: "Fatura-recibo", value: "5" },
+            { label: "NC 2026", sub: "Nota de crédito", value: "2" }
+          ] },
+          { title: "Recebimentos do mês", meta: "Setembro", items: [
+            { label: "Multibanco", sub: "Referências", value: this.eur(1240.5) },
+            { label: "Transferência", sub: "SEPA", value: this.eur(984.15) },
+            { label: "Numerário", sub: "Caixa", value: this.eur(86.4) }
+          ] }
+        ],
+        table: {
+          title: "Documentos de venda",
+          meta: "Exercício de 2026",
+          cols: [{ label: "Documento" }, { label: "Data" }, { label: "Cliente" }, { label: "Base", align: "right" }, { label: "Total", align: "right" }, { label: "Estado" }],
+          rows: [
+            [c("FT 2026/128", { mono: true, weight: "500", color: P }), c("12/09/2026", { mono: true }), c("GRIGGS INTERNATIONAL LDA"), num(this.eur(1000)), num(this.eur(1230)), chip("Pendente", false)],
+            [c("FT 2026/119", { mono: true, weight: "500", color: P }), c("05/09/2026", { mono: true }), c("RIBEIRA TECH SOLUTIONS, LDA"), num(this.eur(896.26)), num(this.eur(1102.4)), chip("Pendente", false)],
+            [c("FR 2026/110", { mono: true, weight: "500", color: P }), c("28/08/2026", { mono: true }), c("ANA BRUNO&ASSOCIADOS, SP, RL"), num(this.eur(1170.73)), num(this.eur(1440)), chip("Pago", true)],
+            [c("FT 2026/101", { mono: true, weight: "500", color: P }), c("14/08/2026", { mono: true }), c("EQUADOR ARISTOCRATA, UNIPESSOAL"), num(this.eur(603.9)), num(this.eur(742.8)), chip("Pendente", false)],
+            [c("FR 2026/094", { mono: true, weight: "500", color: P }), c("31/07/2026", { mono: true }), c("BRAINROCKET PORTUGAL, UNIPESSOAL"), num(this.eur(800.12)), num(this.eur(984.15)), chip("Pago", true)],
+            [c("NC 2026/002", { mono: true, weight: "500", color: P }), c("22/07/2026", { mono: true }), c("OLIVEIRA & SANTOS CONTABILIDADE"), num(this.eur(-47.32)), num(this.eur(-58.2), V), chip("Regularizada", true)]
+          ]
+        }
+      },
+
+      compras: {
+        title: "Compras",
+        subtitle: "Faturas de fornecedores, vencimentos e IVA dedutível.",
+        kpis: [
+          k("Gastos do exercício", this.eur(100551.3), V, "4 categorias", V, "IVA dedutível incluído", 1.1),
+          k("A pagar", this.eur(2418.6), V, "3 faturas", V, "Vencimento mais próximo: 20/09", 1.6),
+          k("Fornecedores ativos", "12", P, "↑ 2", P, "Com documentos no exercício", 0.6),
+          k("IVA dedutível", this.eur(1087.45), P, "3.º trimestre", P, "A reportar na declaração periódica", 0.9)
+        ],
+        panels: [
+          { title: "Gastos por classe", meta: "Exercício", items: [
+            { label: "Ativos não correntes", sub: "Classe 4", value: this.eur(100000) },
+            { label: "Ferramentas e utensílios", sub: "Classe 6", value: this.eur(320) },
+            { label: "Impostos sobre o consumo", sub: "Classe 6", value: this.eur(144.9) },
+            { label: "Refeições", sub: "Classe 6", value: this.eur(86.4) }
+          ] },
+          { title: "Vencimentos próximos", meta: "30 dias", items: [
+            { label: "20/09/2026", sub: "EDP Comercial · eletricidade", chip: this.eur(148.3), chipBg: "#F6E4E2", chipColor: V },
+            { label: "30/09/2026", sub: "Vodafone · comunicações", chip: this.eur(72.4), chipBg: "#F6E4E2", chipColor: V },
+            { label: "05/10/2026", sub: "Gestão condomínio · sede", chip: this.eur(2197.9), chipBg: "#F6E4E2", chipColor: V }
+          ] }
+        ],
+        table: {
+          title: "Faturas de fornecedores",
+          meta: "Exercício de 2026",
+          cols: [{ label: "Documento" }, { label: "Data" }, { label: "Fornecedor" }, { label: "Total", align: "right" }, { label: "Vencimento" }, { label: "Estado" }],
+          rows: [
+            [c("FC 2026/041", { mono: true, weight: "500", color: P }), c("02/09/2026", { mono: true }), c("EDP Comercial, S.A."), num(this.eur(148.3), V), c("20/09/2026", { mono: true }), chip("Por pagar", false)],
+            [c("FC 2026/038", { mono: true, weight: "500", color: P }), c("30/08/2026", { mono: true }), c("Vodafone Portugal, S.A."), num(this.eur(72.4), V), c("30/09/2026", { mono: true }), chip("Por pagar", false)],
+            [c("FC 2026/034", { mono: true, weight: "500", color: P }), c("18/08/2026", { mono: true }), c("Imobiliária Condestável, LDA"), num(this.eur(2197.9), V), c("05/10/2026", { mono: true }), chip("Por pagar", false)],
+            [c("FC 2026/022", { mono: true, weight: "500", color: P }), c("12/06/2026", { mono: true }), c("Nexus Equipamentos, LDA"), num(this.eur(100000), V), c("12/07/2026", { mono: true }), chip("Pago", true)],
+            [c("FC 2026/017", { mono: true, weight: "500", color: P }), c("28/05/2026", { mono: true }), c("Ferragens do Minho, LDA"), num(this.eur(320), V), c("28/06/2026", { mono: true }), chip("Pago", true)],
+            [c("FC 2026/009", { mono: true, weight: "500", color: P }), c("14/05/2026", { mono: true }), c("Restaurante Sé Velha"), num(this.eur(86.4), V), c("14/05/2026", { mono: true }), chip("Pago", true)]
+          ]
+        }
+      },
+
+      bancos: {
+        title: "Bancos",
+        subtitle: "Contas, movimentos e estado da conciliação bancária.",
+        kpis: [
+          k("Saldo consolidado", this.eur(18942.17), P, "3 contas", P, "Atualizado a 12/09/2026", 0.8),
+          k("Entradas de setembro", this.eur(2827.15), P, "↑ 12,4%", P, "Recebimentos de clientes", 1.2),
+          k("Saídas de setembro", this.eur(1104.9), V, "↓ 3,1%", V, "Fornecedores e encargos", 1.4),
+          k("Por conciliar", "7", V, "Movimentos", V, "Mais antigo com 21 dias", 0.5)
+        ],
+        panels: [
+          { title: "Contas bancárias", meta: "Saldos", items: [
+            { label: "Caixa Geral de Depósitos", sub: "PT50 0035 ···· 0421", value: this.eur(12480.62) },
+            { label: "Millennium BCP", sub: "PT50 0033 ···· 7719", value: this.eur(5209.05) },
+            { label: "Revolut Business", sub: "LT12 3250 ···· 8844", value: this.eur(1252.5) }
+          ] },
+          { title: "Conciliação", meta: "Exercício", items: [
+            { label: "Movimentos conciliados", sub: "Até 31/08/2026", chip: "128", chipBg: "#EDF1E9", chipColor: P },
+            { label: "Movimentos pendentes", sub: "Setembro de 2026", chip: "7", chipBg: "#F6E4E2", chipColor: V },
+            { label: "Diferenças em aberto", sub: "Extrato vs contabilidade", chip: this.eur(84.2), chipBg: "#F6E4E2", chipColor: V }
+          ] }
+        ],
+        table: {
+          title: "Movimentos bancários",
+          meta: "Setembro de 2026",
+          cols: [{ label: "Data" }, { label: "Descrição" }, { label: "Conta" }, { label: "Valor", align: "right" }, { label: "Estado" }],
+          rows: [
+            [c("12/09/2026", { mono: true }), c("Recebimento GRIGGS INTERNATIONAL"), c("CGD ···0421"), num("+ " + this.eur(1230)), chip("Conciliado", true)],
+            [c("10/09/2026", { mono: true }), c("Pagamento EDP Comercial"), c("CGD ···0421"), num("− " + this.eur(148.3), V), chip("Por conciliar", false)],
+            [c("08/09/2026", { mono: true }), c("Recebimento RIBEIRA TECH"), c("Millennium ···7719"), num("+ " + this.eur(1102.4)), chip("Conciliado", true)],
+            [c("05/09/2026", { mono: true }), c("Transferência interna"), c("Revolut ···8844"), num("+ " + this.eur(494.75)), chip("Por conciliar", false)],
+            [c("02/09/2026", { mono: true }), c("Encargos sociais · agosto"), c("CGD ···0421"), num("− " + this.eur(956.6), V), chip("Conciliado", true)]
+          ]
+        }
+      },
+
+      salarios: {
+        title: "Salários",
+        subtitle: "Processamento, encargos e recibos de vencimento.",
+        kpis: [
+          k("Colaboradores", "4", P, "Ativos", P, "1 contrato a termo certo", 0.6),
+          k("Processamento de setembro", this.eur(6480), P, "Fechado", P, "Pagamento a 30/09/2026", 1),
+          k("Encargos com a SS", this.eur(1539), V, "23,75%", V, "Entrega até 20/10/2026", 1.3),
+          k("Retenção de IRS", this.eur(842.5), V, "Tabela 2026", V, "Guia até 20/10/2026", 1.8)
+        ],
+        panels: [
+          { title: "Processamento de setembro", meta: "Rubricas", items: [
+            { label: "Vencimentos base", sub: "4 colaboradores", value: this.eur(5400) },
+            { label: "Subsídio de alimentação", sub: "22 dias · isento", value: this.eur(528) },
+            { label: "Ajudas de custo", sub: "Deslocações Braga–Lisboa", value: this.eur(552) }
+          ] },
+          { title: "Obrigações declarativas", meta: "Outubro", items: [
+            { label: "DMR – AT", sub: "Até 10/10/2026", chip: "Agendado", chipBg: "#EDF1E9", chipColor: P },
+            { label: "Declaração de remunerações SS", sub: "Até 10/10/2026", chip: "Agendado", chipBg: "#EDF1E9", chipColor: P },
+            { label: "Guia de pagamento SS", sub: "Até 20/10/2026", chip: "Pendente", chipBg: "#7E1C15", chipColor: "#FFFFFF" }
+          ] }
+        ],
+        table: {
+          title: "Recibos de vencimento",
+          meta: "Setembro de 2026",
+          cols: [{ label: "Colaborador" }, { label: "Função" }, { label: "Bruto", align: "right" }, { label: "Descontos", align: "right" }, { label: "Líquido", align: "right" }, { label: "Estado" }],
+          rows: [
+            [c("Bruna Particheli", { weight: "500" }), c("Sócia principal"), num(this.eur(2400)), num("− " + this.eur(624), V), num(this.eur(1776)), chip("Emitido", true)],
+            [c("Helena Marques", { weight: "500" }), c("Contabilista certificada"), num(this.eur(1750)), num("− " + this.eur(412.5), V), num(this.eur(1337.5)), chip("Emitido", true)],
+            [c("Tiago Nunes", { weight: "500" }), c("Técnico de contabilidade"), num(this.eur(1250)), num("− " + this.eur(256.25), V), num(this.eur(993.75)), chip("Emitido", true)],
+            [c("Sofia Brandão", { weight: "500" }), c("Apoio administrativo"), num(this.eur(1080)), num("− " + this.eur(188.75), V), num(this.eur(891.25)), chip("Por emitir", false)]
+          ]
+        }
+      },
+
+      contabilidade: {
+        title: "Contabilidade",
+        subtitle: "Balancete, diários e declarações fiscais do exercício.",
+        kpis: [
+          k("Resultado do exercício", this.eur(-96877.61), V, "Negativo", V, "Antes de regularizações", 1.6),
+          k("Total do ativo", this.eur(118430.02), P, "↑ 84,2%", P, "Inclui investimentos de 2026", 0.7),
+          k("Lançamentos", "486", P, "↑ 62 no mês", P, "5 diários em uso", 1.1),
+          k("Declarações em aberto", "2", V, "3.º trimestre", V, "IVA e Modelo 22", 1.4)
+        ],
+        panels: [
+          { title: "Balancete por classe", meta: "Setembro", items: [
+            { label: "1 · Meios financeiros", sub: "Caixa e depósitos", value: this.eur(18942.17) },
+            { label: "2 · Contas a receber e pagar", sub: "Clientes e fornecedores", value: this.eur(6964.35) },
+            { label: "4 · Investimentos", sub: "Ativos não correntes", value: this.eur(95833.33) },
+            { label: "6 · Gastos", sub: "Exercício de 2026", value: this.eur(100551.3) },
+            { label: "7 · Rendimentos", sub: "Exercício de 2026", value: this.eur(3673.69) }
+          ] },
+          { title: "Declarações fiscais", meta: "Calendário", items: [
+            { label: "IVA · 3.º trimestre", sub: "Até 15/10/2026", chip: "A decorrer", chipBg: "#EDF1E9", chipColor: P },
+            { label: "Modelo 22 · 2025", sub: "Até 31/05/2026", chip: "Entregue", chipBg: "#D8E0D2", chipColor: P },
+            { label: "IES · 2025", sub: "Até 15/07/2026", chip: "Entregue", chipBg: "#D8E0D2", chipColor: P }
+          ] }
+        ],
+        table: {
+          title: "Lançamentos recentes",
+          meta: "Diário geral",
+          cols: [{ label: "Data" }, { label: "Diário" }, { label: "Documento" }, { label: "Conta" }, { label: "Débito", align: "right" }, { label: "Crédito", align: "right" }],
+          rows: [
+            [c("12/09/2026", { mono: true }), c("Vendas"), c("FT 2026/128", { mono: true, color: P, weight: "500" }), c("21199 · Clientes"), num(this.eur(1230)), c("—", { align: "right", color: "#8A9A92" })],
+            [c("12/09/2026", { mono: true }), c("Vendas"), c("FT 2026/128", { mono: true, color: P, weight: "500" }), c("7111 · Prestações de serviços"), c("—", { align: "right", color: "#8A9A92" }), num(this.eur(1000))],
+            [c("10/09/2026", { mono: true }), c("Compras"), c("FC 2026/041", { mono: true, color: P, weight: "500" }), c("6242 · Eletricidade"), num(this.eur(120.57)), c("—", { align: "right", color: "#8A9A92" })],
+            [c("02/09/2026", { mono: true }), c("Bancos"), c("MB 2026/210", { mono: true, color: P, weight: "500" }), c("12101 · CGD"), c("—", { align: "right", color: "#8A9A92" }), num(this.eur(956.6))],
+            [c("31/08/2026", { mono: true }), c("Operações diversas"), c("OD 2026/018", { mono: true, color: P, weight: "500" }), c("642 · Depreciações"), num(this.eur(1041.67)), c("—", { align: "right", color: "#8A9A92" })]
+          ]
+        }
+      },
+
+      ativos: {
+        title: "Ativos",
+        subtitle: "Fichas, depreciações e mapas fiscais dos ativos fixos.",
+        kpis: [
+          k("Valor de aquisição", this.eur(100000), P, "3 fichas", P, "Registadas em 2026", 0.8),
+          k("Depreciação acumulada", this.eur(4166.67), V, "Até 31/08", V, "Método das quotas constantes", 1.2),
+          k("Valor líquido", this.eur(95833.33), P, "95,8%", P, "Base para o balanço", 0.5),
+          k("Fichas por processar", "1", V, "Setembro", V, "Aguarda data de utilização", 1.5)
+        ],
+        panels: [
+          { title: "Classes de ativos", meta: "Exercício", items: [
+            { label: "Equipamento básico", sub: "Taxa 12,5% · 8 anos", value: this.eur(80000) },
+            { label: "Equipamento administrativo", sub: "Taxa 25% · 4 anos", value: this.eur(15000) },
+            { label: "Ativos intangíveis", sub: "Taxa 33,33% · 3 anos", value: this.eur(5000) }
+          ] },
+          { title: "Processamento", meta: "Depreciações", items: [
+            { label: "Último processamento", sub: "31/08/2026", chip: "Concluído", chipBg: "#D8E0D2", chipColor: P },
+            { label: "Próximo processamento", sub: "30/09/2026", chip: "Agendado", chipBg: "#EDF1E9", chipColor: P },
+            { label: "Mapas fiscais", sub: "Modelo 31 e Modelo 32", chip: "Por emitir", chipBg: "#F6E4E2", chipColor: V }
+          ] }
+        ],
+        table: {
+          title: "Fichas de ativos",
+          meta: "Exercício de 2026",
+          cols: [{ label: "Ficha" }, { label: "Descrição" }, { label: "Aquisição" }, { label: "Valor", align: "right" }, { label: "Taxa", align: "right" }, { label: "Valor líquido", align: "right" }],
+          rows: [
+            [c("AT-2026/001", { mono: true, weight: "500", color: P }), c("Linha de produção · equipamento básico"), c("12/06/2026", { mono: true }), num(this.eur(80000)), num("12,5%"), num(this.eur(77500))],
+            [c("AT-2026/002", { mono: true, weight: "500", color: P }), c("Mobiliário e equipamento de escritório"), c("12/06/2026", { mono: true }), num(this.eur(15000)), num("25%"), num(this.eur(14062.5))],
+            [c("AT-2026/003", { mono: true, weight: "500", color: P }), c("Licenças de software de gestão"), c("01/07/2026", { mono: true }), num(this.eur(5000)), num("33,33%"), num(this.eur(4270.83))]
+          ]
+        }
+      }
+    };
+  }
+
+  renderVals() {
+    const s = this.state;
+    const lime = this.props.accentColor || "#B4F715";
+    const petroleo = "#01403D";
+    const vermelho = "#8E241B";
+    const vinho = "#7E1C15";
+    const screen = this.screens.find(x => x.id === s.screen) || this.screens[1];
+    const q = s.query.trim().toLowerCase();
+
+    let list = this.clients.filter(c =>
+      (!q || c.name.toLowerCase().includes(q) || c.nif.toLowerCase().includes(q)) &&
+      (s.filter === "Todos" || (s.filter === "Com saldo" ? c.saldo !== 0 : c.estado === s.filter))
+    );
+    list = list.slice().sort((a, b) => {
+      const k = s.sortKey === "nif" ? "nif" : "name";
+      return a[k].localeCompare(b[k], "pt") * s.sortDir;
+    });
+
+    const perPage = 10;
+    const pageCount = Math.max(1, Math.ceil(list.length / perPage));
+    const page = Math.min(s.page, pageCount);
+    const start = (page - 1) * perPage;
+    const pageRows = list.slice(start, start + perPage);
+    const dense = (this.props.density || "Confortável") === "Compacta";
+
+    const factor = s.range === "Dia" ? 0.08 : s.range === "Semana" ? 0.35 : 1;
+    const salesRaw = [
+      { label: "Mai", a: 0, b: 0 }, { label: "Jun", a: 0, b: 0 }, { label: "Jul", a: 353.69, b: 3910 },
+      { label: "Ago", a: 3320, b: 3500 }, { label: "Set", a: 0, b: 6437.3 }
+    ];
+    const salesMonths = salesRaw.map(m => ({
+      label: m.label,
+      hA: ((m.a * factor) / 8000 * 100).toFixed(1) + "%",
+      hB: ((m.b * factor) / 8000 * 100).toFixed(1) + "%",
+      tipA: "2026 · " + this.eur(m.a * factor),
+      tipB: "2025 · " + this.eur(m.b * factor)
+    }));
+
+    const escalaGastos = ["#7E1C15", "#A5382C", "#C2564A", "#DD7A6E"];
+    const expenses = [
+      { label: "Ativos não correntes", v: 100000, hint: "1 documento · classe 4" },
+      { label: "Ferramentas e utensílios", v: 320, hint: "2 documentos · classe 6" },
+      { label: "Impostos sobre o consumo", v: 144.9, hint: "1 documento · classe 6" },
+      { label: "Refeições", v: 86.4, hint: "3 documentos · classe 6" }
+    ];
+
+    const faturadoTotal = this.clients.reduce((t, c) => t + c.faturado, 0);
+    const comDocs = this.clients.filter(c => c.docs > 0).sort((a, b) => b.faturado - a.faturado);
+
+    const mod = this.moduleConfig()[s.screen] || null;
+    const detailClient = s.detailId ? this.clients.find(c => c.nif === s.detailId) : null;
+    const openClient = nif => () => this.setState({ detailId: nif });
+
+    return {
+      screenTitle: screen.label,
+      pageTitle: screen.page || screen.label,
+      isDashboard: s.screen === "dashboard",
+      isClientes: s.screen === "clientes",
+      isPlaceholder: false,
+      isModule: !!mod,
+      moduleSubtitle: mod ? mod.subtitle : "",
+      moduleKpis: mod ? mod.kpis : [],
+      modulePanels: mod ? mod.panels : [],
+      tableTitle: mod ? mod.table.title : "",
+      tableMeta: mod ? mod.table.meta : "",
+      tableCols: mod ? mod.table.cols.map(col => ({ label: col.label, align: col.align || "left" })) : [],
+      moduleRows: mod ? mod.table.rows.map((cells, i) => ({ cells, rowBg: i % 2 ? "#FBFCF8" : "#FFFFFF" })) : [],
+      showInventoryNotice: s.notice,
+      dismissNotice: () => this.setState({ notice: false }),
+      navItems: this.screens.map(x => {
+        const active = s.screen === x.id;
+        return {
+          label: x.label,
+          color: active ? "#FFFFFF" : "#C6D3CC",
+          bar: active ? lime : "transparent",
+          go: () => this.setState({ screen: x.id, detailId: null, page: 1 })
+        };
+      }),
+      goClientes: () => this.setState({ screen: "clientes", page: 1 }),
+      goDashboard: () => this.setState({ screen: "dashboard" }),
+
+      ranges: ["Dia", "Semana", "Mês"].map(r => ({
+        label: r, bg: s.range === r ? petroleo : "transparent", color: s.range === r ? "#FFFFFF" : "#5A6B63",
+        go: () => this.setState({ range: r })
+      })),
+
+      kpis: [
+        { label: "Vendas · jan a 12 set", value: this.eur(3673.69), tone: petroleo, delta: "↓ 73,5%", deltaColor: vermelho, hint: "2025 no mesmo período: € 13.847,30", spark: this.spark(0.7, petroleo) },
+        { label: "Gastos do exercício", value: this.eur(100551.3), tone: vermelho, delta: "↑ 4 categorias", deltaColor: vermelho, hint: "IVA dedutível incluído", spark: this.spark(1.1, "#C2564A") },
+        { label: "Resultado do exercício", value: this.eur(-96877.61), tone: vermelho, delta: "Negativo", deltaColor: vermelho, hint: "Antes de regularizações", spark: this.spark(1.6, "#C2564A") },
+        { label: "Carteira de clientes", value: "30", tone: petroleo, delta: "27 ativos", deltaColor: petroleo, hint: "3 avisos enviados este ano", spark: this.spark(0.4, petroleo) }
+      ],
+
+      salesMonths,
+      salesBarNow: (3673.69 / 13847.3 * 100).toFixed(1) + "%",
+
+      goals: [
+        { label: "Faturação", value: this.eur(3673.69), target: "meta " + this.eur(20000), pctLabel: "18% da meta", w: "18%", color: petroleo },
+        { label: "Recebimentos", value: this.eur(2827.15), target: "meta " + this.eur(20000), pctLabel: "14% da meta", w: "14%", color: petroleo },
+        { label: "IVA liquidado", value: this.eur(845.05), target: "3.º trimestre", pctLabel: "em curso", w: "62%", color: lime },
+        { label: "Clientes ativos", value: "27", target: "de 30 na carteira", pctLabel: "90%", w: "90%", color: petroleo }
+      ],
+
+      expenseRows: expenses.map((e, i) => ({
+        label: e.label, value: this.eur(e.v), hint: e.hint,
+        color: escalaGastos[Math.min(i, escalaGastos.length - 1)],
+        w: Math.max(2, e.v / 100000 * 100).toFixed(1) + "%"
+      })),
+
+      tasks: [
+        { day: "31", month: "JAN", title: "Inventário final de 2025", meta: "Necessário para documentos com stock", status: "Pendente", chipBg: vinho, chipColor: "#FFFFFF" },
+        { day: "15", month: "OUT", title: "Declaração periódica de IVA · 3.º T", meta: "Portal das Finanças", status: "A decorrer", chipBg: "#EDF1E9", chipColor: petroleo },
+        { day: "20", month: "OUT", title: "Ficheiro SAF-T (PT) de faturação", meta: "Exportação mensal", status: "Agendado", chipBg: "#EDF1E9", chipColor: "#5A6B63" },
+        { day: "30", month: "NOV", title: "Retenções na fonte · setembro", meta: "Guia de pagamento", status: "Concluído", chipBg: "#D8E0D2", chipColor: petroleo }
+      ],
+
+      recentDocs: comDocs.slice(0, 5).map((c, i) => ({
+        ref: "FT 2026/" + (128 - i * 9),
+        client: c.name,
+        value: this.eur(c.faturado * 0.45),
+        valueColor: petroleo,
+        status: c.saldo > 0 ? "Pendente" : "Pago",
+        chipBg: c.saldo > 0 ? "#F6E4E2" : "#EDF1E9",
+        chipColor: c.saldo > 0 ? vermelho : petroleo
+      })),
+
+      summaryRows: comDocs.slice(0, 6).map(c => ({
+        name: c.name,
+        docs: String(c.docs),
+        faturado: this.eur(c.faturado),
+        w: (c.faturado / faturadoTotal * 100).toFixed(1) + "%",
+        pct: (c.faturado / faturadoTotal * 100).toFixed(1) + "%",
+        recebido: this.eur(Math.max(0, c.faturado - Math.max(0, c.saldo))),
+        pendente: c.saldo > 0 ? this.eur(c.saldo) : "—",
+        pendenteColor: c.saldo > 0 ? vermelho : "#8A9A92",
+        situacao: c.saldo > 0 ? "Em cobrança" : "Regularizado",
+        chipBg: c.saldo > 0 ? "#F6E4E2" : "#EDF1E9",
+        chipColor: c.saldo > 0 ? vermelho : petroleo,
+        open: openClient(c.nif)
+      })),
+
+      query: s.query,
+      onSearch: e => this.setState({ query: e.target.value, page: 1 }),
+      filters: ["Todos", "Ativo", "Inativo", "Com saldo"].map(f => ({
+        label: f,
+        bg: s.filter === f ? petroleo : "transparent",
+        color: s.filter === f ? "#FFFFFF" : petroleo,
+        border: s.filter === f ? petroleo : "#D8E0D2",
+        go: () => this.setState({ filter: f, page: 1 })
+      })),
+      resultCount: list.length + (list.length === 1 ? " cliente" : " clientes"),
+      rowPad: dense ? "9px" : "13px",
+      rows: pageRows.map((c, i) => ({
+        nif: c.nif, name: c.name, aviso: c.aviso, sub: c.sub,
+        saldo: c.saldo === 0 ? "—" : this.eur(c.saldo),
+        saldoColor: c.saldo === 0 ? "#8A9A92" : c.saldo < 0 ? vermelho : petroleo,
+        sp: "✓", spColor: petroleo,
+        ric: c.estado === "Ativo" ? "✓" : "—",
+        ricColor: c.estado === "Ativo" ? petroleo : "#B6C2B8",
+        rowBg: i % 2 ? "#FBFCF8" : "#FFFFFF",
+        open: openClient(c.nif)
+      })),
+      isEmpty: list.length === 0,
+      rangeLabel: list.length === 0 ? "0 de 0" : (start + 1) + " – " + Math.min(start + perPage, list.length) + " de " + list.length,
+      pages: Array.from({ length: pageCount }, (_, i) => i + 1).slice(0, 6).map(n => ({
+        n, bg: n === page ? petroleo : "#FFFFFF", color: n === page ? "#FFFFFF" : "#3A4A43",
+        border: n === page ? petroleo : "#D8E0D2", go: () => this.setState({ page: n })
+      })),
+      prevPage: () => this.setState({ page: Math.max(1, page - 1) }),
+      nextPage: () => this.setState({ page: Math.min(pageCount, page + 1) }),
+      sortByNif: () => this.setState({ sortKey: "nif", sortDir: s.sortKey === "nif" ? -s.sortDir : 1 }),
+      sortByName: () => this.setState({ sortKey: "name", sortDir: s.sortKey === "name" ? -s.sortDir : 1 }),
+      nifArrow: s.sortKey === "nif" ? (s.sortDir === 1 ? "↑" : "↓") : "⇅",
+      nameArrow: s.sortKey === "name" ? (s.sortDir === 1 ? "↑" : "↓") : "⇅",
+
+      detail: detailClient ? {
+        name: detailClient.name, nif: detailClient.nif, sub: detailClient.sub,
+        initials: this.initials(detailClient.name),
+        estado: detailClient.estado, regime: detailClient.regime,
+        saldo: detailClient.saldo === 0 ? "€ 0,00" : this.eur(detailClient.saldo),
+        saldoColor: detailClient.saldo < 0 ? vermelho : petroleo,
+        faturado: this.eur(detailClient.faturado),
+        fields: [
+          { label: "Último aviso enviado", value: detailClient.aviso },
+          { label: "Sub-conta contabilística", value: "211" + detailClient.sub },
+          { label: "Documentos emitidos", value: String(detailClient.docs) },
+          { label: "Regime de IVA", value: detailClient.regime },
+          { label: "Gestor de conta", value: "Bruna Particheli" }
+        ],
+        docs: detailClient.docs === 0
+          ? [{ ref: "Sem documentos emitidos", date: "Exercício de 2026", value: "—", status: "—", chipBg: "#EDF1E9", chipColor: "#5A6B63" }]
+          : [
+            { ref: "FT 2026/" + (100 + detailClient.docs), date: "12 set 2026", value: this.eur(detailClient.faturado * 0.45), status: "Pago", chipBg: "#EDF1E9", chipColor: petroleo },
+            { ref: "FT 2026/" + (60 + detailClient.docs), date: "28 ago 2026", value: this.eur(detailClient.faturado * 0.35), status: detailClient.saldo > 0 ? "Pendente" : "Pago", chipBg: detailClient.saldo > 0 ? "#F6E4E2" : "#EDF1E9", chipColor: detailClient.saldo > 0 ? vermelho : petroleo },
+            { ref: "FT 2026/" + (20 + detailClient.docs), date: "14 jul 2026", value: this.eur(detailClient.faturado * 0.2), status: "Pago", chipBg: "#EDF1E9", chipColor: petroleo }
+          ]
+      } : null,
+      closeDetail: () => this.setState({ detailId: null }),
+      stop: e => e.stopPropagation()
+    };
+  }
+}
+
+</script>
+
+
+<div id="__claude_design_branding"><style>#__claude_design_branding{position:fixed;right:16px;bottom:16px;z-index:2147483646;display:flex;align-items:center;gap:7px;height:30px;padding:0 5px 0 10px;border-radius:999px;font-family:"Anthropic Sans",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:12.5px;font-weight:400;line-height:1;letter-spacing:normal;text-transform:none;color:#141413;background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);box-shadow:0 0 0 .5px rgba(31,30,29,.14),0 2px 10px rgba(0,0,0,.09)}
+#__claude_design_branding *{box-sizing:border-box;margin:0}
+#__claude_design_branding a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+#__claude_design_branding a:hover span{text-decoration:underline}
+#__claude_design_branding svg{flex:none}
+#__claude_design_branding a svg{color:#D97757}
+#__claude_design_branding button{width:20px;height:20px;padding:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:currentColor;opacity:.55;border:0;background:none;cursor:pointer;flex:none;font:inherit;transition:opacity .14s}
+#__claude_design_branding button:hover{opacity:1;background:rgba(127,127,127,.22)}
+@media print{#__claude_design_branding{display:none}}</style><a href="https://claude.com/product/design" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 20 21" fill="none" aria-hidden="true"><path fill="currentColor" d="M9.99902 0C15.5258 0.000170936 19.999 4.50643 19.999 10.0547C19.999 11.7656 19.5863 12.9976 18.7861 13.8203C17.9924 14.6362 16.9465 14.9138 15.9854 15.0078C15.05 15.0993 14.0097 15.0262 13.2549 15.0186C12.8524 15.0145 12.5177 15.0267 12.2441 15.0703C11.9682 15.1144 11.8143 15.1813 11.7305 15.2432C11.4745 15.4322 11.3353 15.7121 11.2656 16.1602C11.2303 16.3875 11.2168 16.6362 11.209 16.9131C11.2017 17.1715 11.1986 17.4893 11.1807 17.7705C11.1469 18.2975 11.0495 19.0865 10.4199 19.5908C9.7846 20.0996 8.88652 20.1057 7.85449 19.877C7.36399 19.7682 6.88652 19.6232 6.42578 19.4453C2.66989 17.9949 0.000187748 14.3414 0 10.0547C0 4.50643 4.47223 0.000171048 9.99902 0ZM9.99902 1.60547C5.36781 1.60564 1.60547 5.38391 1.60547 10.0547C1.60566 13.6582 3.84823 16.7296 7.00391 17.9482C7.39027 18.0974 7.79085 18.2184 8.20215 18.3096C9.1375 18.5169 9.384 18.3633 9.41602 18.3379C9.4524 18.3087 9.54558 18.1915 9.5791 17.668C9.5947 17.4239 9.59473 17.1786 9.60352 16.8672C9.61179 16.5742 9.62831 16.2435 9.67969 15.9131C9.78359 15.2455 10.0474 14.4906 10.7764 13.9521C11.1479 13.6778 11.5842 13.5493 11.9912 13.4844C12.4007 13.4191 12.8434 13.4088 13.2705 13.4131C14.1753 13.4222 15.0071 13.4905 15.8291 13.4102C16.6257 13.3322 17.2249 13.1235 17.6357 12.7012C18.0401 12.2855 18.3935 11.5261 18.3936 10.0547C18.3936 5.38391 14.6302 1.60564 9.99902 1.60547ZM5.11621 9.86719C5.86386 9.91468 6.45486 10.5348 6.45508 11.2939C6.45506 12.0838 5.81519 12.7245 5.02539 12.7246C4.28481 12.7246 3.67573 12.1617 3.60254 11.4404L3.59473 11.2939L3.60156 11.1533C3.66942 10.4596 4.23282 9.91186 4.93359 9.86719H5.11621ZM14.9814 7.19141C15.729 7.23889 16.3199 7.85919 16.3203 8.61816C16.3203 9.40801 15.6804 10.0487 14.8906 10.0488C14.1501 10.0487 13.5409 9.48586 13.4678 8.76465L13.46 8.61816L13.4668 8.47754C13.5348 7.78403 14.0983 7.23618 14.7988 7.19141H14.9814ZM6.4541 4.93457C7.20161 4.9822 7.79275 5.60231 7.79297 6.36133C7.79288 7.151 7.15291 7.7917 6.36328 7.79199C5.62274 7.79199 5.01369 7.22903 4.94043 6.50781L4.93262 6.36133L4.93945 6.2207C5.00731 5.52698 5.5707 4.97922 6.27148 4.93457H6.4541ZM11.3867 3.59668C12.1343 3.64419 12.7253 4.26436 12.7256 5.02344C12.7256 5.81326 12.0857 6.45393 11.2959 6.4541C10.5553 6.4541 9.94622 5.89123 9.87305 5.16992L9.86523 5.02344L9.87207 4.88281C9.93996 4.18912 10.5033 3.64133 11.2041 3.59668H11.3867Z"></path></svg><span>Made with Claude Design</span></a><button type="button" aria-label="Dismiss" onclick="this.parentElement.remove()"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button></div></body></html>
