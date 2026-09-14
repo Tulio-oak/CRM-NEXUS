@@ -180,17 +180,55 @@
   input { font-family: inherit; }
   ::-webkit-scrollbar { width: 10px; height: 10px; }
   ::-webkit-scrollbar-thumb { background: #D8E0D2; border: 3px solid transparent; background-clip: content-box; }
+
+  .nexus-hamburger { display: none; }
+  .nexus-menu-overlay { display: none; }
+  @media (max-width: 900px) {
+    .nexus-hamburger { display: inline-flex !important; }
+    .nexus-nav {
+      display: none !important;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      flex-wrap: nowrap !important;
+      gap: 2px;
+      background: #01403D;
+      padding: 10px;
+      margin: 0;
+      box-shadow: 0 16px 28px rgba(0, 0, 0, .28);
+      border-radius: 0 0 14px 14px;
+      max-height: calc(100vh - 64px);
+      overflow-y: auto;
+      z-index: 30;
+    }
+    .nexus-nav.nexus-nav-open { display: flex !important; }
+    .nexus-nav button { width: 100%; justify-content: flex-start !important; height: 46px; border-radius: 8px !important; }
+    .nexus-menu-overlay {
+      display: block;
+      position: fixed;
+      inset: 64px 0 0 0;
+      background: rgba(1, 42, 40, .45);
+      z-index: 25;
+    }
+  }
 </style>
 </helmet>
 <div style="font-family: Barlow, Helvetica, Arial, sans-serif; color: #1A1F1C; background: #F6F8F2; min-height: 100vh; -webkit-font-smoothing: antialiased">
 
   <header style="background: #01403D; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 10px 24px; min-height: 64px; position: sticky; top: 0; z-index: 30">
     <img src="assets/500f44f4-0298-4eed-ac81-22abbc12f6b8.png" alt="Nexus Global Business" style="width: 152px; height: auto; display: block; flex: none">
-    <nav style="display: flex; align-items: center; flex-wrap: wrap; gap: 2px; flex: 1; min-width: 0">
+    <button type="button" class="nexus-hamburger" sc-camel-on-click="{{ toggleMenu }}" aria-label="Abrir menu" style="align-items: center; justify-content: center; width: 40px; height: 40px; border: 0; background: transparent; color: #FFFFFF; cursor: pointer; border-radius: 8px; flex: none; font-size: 19px; margin-left: auto">{{ hamburgerIcon }}</button>
+    <nav class="{{ navClass }}" style="display: flex; align-items: center; flex-wrap: wrap; gap: 2px; flex: 1; min-width: 0">
       <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="9">
         <button type="button" sc-camel-on-click="{{ item.go }}" style="display: flex; align-items: center; height: 40px; padding: 0 11px; border: 0; border-bottom: 3px solid {{ item.bar }}; background: transparent; cursor: pointer; font-family: Poppins, sans-serif; font-size: 12.5px; font-weight: 500; white-space: nowrap; color: {{ item.color }}; border-radius: 8px" style-hover="color: #FFFFFF">{{ item.label }}</button>
       </sc-for>
     </nav>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div class="nexus-menu-overlay" sc-camel-on-click="{{ closeMenu }}"></div>
+    </sc-if>
     <div style="display: flex; align-items: center; gap: 14px; flex: none">
       <div style="display: flex; align-items: center; gap: 8px; padding: 7px 12px; background: #012A28; font-size: 10.5px; font-weight: 500; color: #FFFFFF; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 6px">
         <span style="width: 7px; height: 7px; background: #B4F715; border-radius: 3px"></span>Conectado
@@ -711,7 +749,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script="" data-props="{&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#B4F715&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#B4F715&quot;,&quot;#C7FA4A&quot;,&quot;#A5E60D&quot;],&quot;section&quot;:&quot;Identidade&quot;},&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Confortável&quot;,&quot;options&quot;:[&quot;Confortável&quot;,&quot;Compacta&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tabela&quot;}}">
 class Component extends DCLogic {
-  state = { screen: "dashboard", range: "Mês", query: "", page: 1, sortKey: "name", sortDir: 1, filter: "Todos", detailId: null, notice: true };
+  state = { screen: "dashboard", range: "Mês", query: "", page: 1, sortKey: "name", sortDir: 1, filter: "Todos", detailId: null, notice: true, menuOpen: false };
 
   clients = [
     { nif: "506875164", name: "ANA BRUNO&ASSOCIADOS - SOCIEDADE DE ADVOGADOS, SP, RL", sub: "001", aviso: "—", saldo: 1240.5, faturado: 3200, estado: "Ativo", regime: "IVA trimestral", docs: 6 },
@@ -1123,13 +1161,18 @@ class Component extends DCLogic {
       moduleRows: mod ? mod.table.rows.map((cells, i) => ({ cells, rowBg: i % 2 ? "#FBFCF8" : "#FFFFFF" })) : [],
       showInventoryNotice: s.notice,
       dismissNotice: () => this.setState({ notice: false }),
+      menuOpen: s.menuOpen,
+      navClass: "nexus-nav" + (s.menuOpen ? " nexus-nav-open" : ""),
+      hamburgerIcon: s.menuOpen ? "✕" : "☰",
+      toggleMenu: () => this.setState({ menuOpen: !s.menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
       navItems: this.screens.map(x => {
         const active = s.screen === x.id;
         return {
           label: x.label,
           color: active ? "#FFFFFF" : "#C6D3CC",
           bar: active ? lime : "transparent",
-          go: () => this.setState({ screen: x.id, detailId: null, page: 1 })
+          go: () => this.setState({ screen: x.id, detailId: null, page: 1, menuOpen: false })
         };
       }),
       goClientes: () => this.setState({ screen: "clientes", page: 1 }),
